@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Menu">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_marginTop="25dp"
+        android:text="@string/my_tournament"
+        android:textAlignment="center"
+        android:textSize="50sp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/btPlay"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_marginTop="15dp"
+        android:onClick="play"
+        android:text="@string/play"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btTable"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_marginTop="15dp"
+        android:onClick="showTable"
+        android:text="@string/table"
+        android:textSize="20sp"/>
+    <!---
+    <Button
+        android:id="@+id/btTeams"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_marginTop="15dp"
+        android:onClick="showTeams"
+        android:text="@string/teams"
+        android:textSize="20sp"/> -->
+    <Button
+        android:id="@+id/btFinish"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_marginTop="15dp"
+        android:onClick="finish"
+        android:text="@string/finish"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/btGoOut"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_marginTop="15dp"
+        android:onClick="goOut"
+        android:text="@string/go_out"
+        android:textSize="20sp"/>
+
+</LinearLayout>

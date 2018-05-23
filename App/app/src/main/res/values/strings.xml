@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Tournament</string>
+    <string name="load">Continuar</string>
+    <string name="start">Comenzar</string>
+    <string name="player2">Jugador 2</string>
+    <string name="player1">Jugador 1</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="name">Nombre</string>
+    <string name="teams">Equipos</string>
+    <string name="team">Equipo</string>
+    <string name="register">Inscribir</string>
+    <string name="my_tournament">Mi Torneo</string>
+    <string name="play">Jugar</string>
+    <string name="finish">Finalizar torneo</string>
+    <string name="calendar">Calendario</string>
+    <string name="table">Clasificación</string>
+    <string name="team_local">Equipo Local</string>
+    <string name="team_visitor">Equipo Visitante</string>
+    <string name="vs">VS</string>
+    <string name="next_match">Siguiente Partido:</string>
+    <string name="result">Resultado:</string>
+    <string name="end_of_match">Final del Partido</string>
+    <string name="next_team">Siguiente Equipo</string>
+    <string name="go_out">Salir</string>
+    <string name="no_teams">No hay equipos</string>
+</resources>
