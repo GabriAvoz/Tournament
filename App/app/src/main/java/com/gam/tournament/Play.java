@@ -1,16 +1,17 @@
 package com.gam.tournament;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.gam.tournament.DataBase.AppDatabase;
 import com.gam.tournament.DataBase.Team;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class Play extends AppCompatActivity {
@@ -35,7 +36,7 @@ public class Play extends AppCompatActivity {
         btEnd = (Button) findViewById(R.id.btEndMatch);
 
         //Mostramos los equipos que tienen que jugar
-        mDb = AppDatabase.getInMemoryDatabase(getApplicationContext());
+        mDb = AppDatabase.getDatabase(getApplicationContext());
         nextMatch();
 
         //Una vez escrito el resultado:

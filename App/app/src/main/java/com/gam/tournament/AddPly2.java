@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.gam.tournament.DataBase.AppDatabase;
 import com.gam.tournament.DataBase.Team;
@@ -23,7 +24,6 @@ public class AddPly2 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_ply2);
-
         //Referenciamos componentes
         etNamePlayer2 = (EditText)findViewById(R.id.player2name);
         etTeam1ply2 = (EditText)findViewById(R.id.team1player2);
@@ -40,7 +40,7 @@ public class AddPly2 extends AppCompatActivity {
                 team2ply2 = new Team(4, etTeam2ply2.getText().toString(), etNamePlayer2.getText().toString(),3);
                 team3ply2 = new Team(6, etTeam3ply2.getText().toString(), etNamePlayer2.getText().toString(),5);
 
-                mDb = AppDatabase.getInMemoryDatabase(getApplicationContext());
+                mDb = AppDatabase.getDatabase(getApplicationContext());
 
                 mDb.teamDAO().insertTeam(team1ply2);
                 mDb.teamDAO().insertTeam(team2ply2);

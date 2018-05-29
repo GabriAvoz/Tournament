@@ -41,7 +41,7 @@ public class AddPly1 extends AppCompatActivity {
                 team2ply1 = new Team(3, etTeam2ply1.getText().toString(), etNamePlayer1.getText().toString(),4);
                 team3ply1 = new Team(5, etTeam3ply1.getText().toString(), etNamePlayer1.getText().toString(),6);
 
-                mDb = AppDatabase.getInMemoryDatabase(getApplicationContext());
+                mDb = AppDatabase.getDatabase(getApplicationContext());
 
                 mDb.teamDAO().insertTeam(team1ply1);
                 mDb.teamDAO().insertTeam(team2ply1);

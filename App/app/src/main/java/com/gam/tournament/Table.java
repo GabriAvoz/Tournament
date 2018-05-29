@@ -33,7 +33,7 @@ public class Table extends AppCompatActivity {
 
     private ArrayList<String[]> getTeams() {
 
-        mDb = AppDatabase.getInMemoryDatabase(getApplicationContext());
+        mDb = AppDatabase.getDatabase(getApplicationContext());
         teams = mDb.teamDAO().getAllTeams();
         teamsByPts = teamsOrder(list2ArrayList(teams));
         rows = fillRows(teamsByPts);

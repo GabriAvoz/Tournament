@@ -16,7 +16,7 @@ public class Menu extends AppCompatActivity {
     }
 
     public void play(View view){
-        AppDatabase mDb = AppDatabase.getInMemoryDatabase(getApplicationContext());
+        AppDatabase mDb = AppDatabase.getDatabase(getApplicationContext());
         int dbSize = mDb.teamDAO().getAllTeams().size();
         if (dbSize < 3){
             Intent intent = new Intent(this, AddPly1.class);
@@ -39,7 +39,7 @@ public class Menu extends AppCompatActivity {
 
     public void finish(View view){
 
-        AppDatabase mDb = AppDatabase.getInMemoryDatabase(getApplicationContext());
+        AppDatabase mDb = AppDatabase.getDatabase(getApplicationContext());
         mDb.teamDAO().deleteAll();
     }
 
